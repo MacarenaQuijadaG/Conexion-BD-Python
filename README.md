@@ -32,9 +32,10 @@ cd nombre-del-repositorio
 
 ### 2. Crear un entorno virtual (opcional pero recomendado)
 Para aislar las dependencias, crea un entorno virtual:
-```sh
+```bash
  python -m venv venv
    ```
+
  ```sh
     venv\Scripts\activate
     ```
