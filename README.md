@@ -90,3 +90,6 @@ Para iniciar la aplicación de gestión de tareas, ejecuta el siguiente comando:
 - Actualizar el estado de una tarea.
 - Eliminar una tarea.
 - Salir del programa.
+- ---
+
+⌨️ con ❤️ por [Macarena Quijada G](https://github.com/MacarenaQuijadaG) 😊
