@@ -36,7 +36,7 @@ Para aislar las dependencias, crea un entorno virtual:
  python -m venv venv
    ```
 
- ```sh
+ ```bash
     venv\Scripts\activate
     ```
 
