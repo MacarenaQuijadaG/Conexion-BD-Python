@@ -35,33 +35,35 @@ Para aislar las dependencias, crea un entorno virtual:
 ```bash
  python -m venv venv
    ```
-
- ```bash
-    venv\Scripts\activate
-    ```
-
+```bash
+ venv\Scripts\activate
+```
 ### 3. Instalar dependencias
 Instala los paquetes necesarios ejecutando:
- ```sh
-   pip install -r requirements.txt
-    ```
-
+```bash
+ pip install -r requirements.txt
+```
 ### 4. Configurar la base de datos MySQL
 Abre MySQL Workbench o cualquier otro cliente de MySQL.
 Crea la base de datos y las tablas necesarias ejecutando el siguiente script:
-sql
-Copiar código
-CREATE DATABASE task_manager;
-
+```bash
+ CREATE DATABASE task_manager;
+```
+```bash
 USE task_manager;
-
-CREATE TABLE tasks (
+```
+```bash
+   CREATE TABLE tasks (
     id INT AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(255) NOT NULL,
     description TEXT,
     status ENUM('pending', 'completed') DEFAULT 'pending'
 );
-5. Configurar el archivo de conexión a la base de datos
+
+```
+
+
+### 5. Configurar el archivo de conexión a la base de datos
 Crea un archivo config.py en el directorio raíz del proyecto con la siguiente configuración para conectarse a la base de datos:
 
 python
@@ -72,12 +74,14 @@ db_config = {
     'password': 'tu_contraseña',  # Cambia 'tu_contraseña' por tu contraseña de MySQL
     'database': 'task_manager'
 }
-Uso
+
 Ejecutar el programa
 Para iniciar la aplicación de gestión de tareas, ejecuta el siguiente comando:
+```bash
+ python main.py
+```
 
 
-python main.py
 ## Funcionalidades
 ### El programa ofrece las siguientes opciones a través de un menú interactivo:
 
